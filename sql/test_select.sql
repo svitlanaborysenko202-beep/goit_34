@@ -1,6 +1,9 @@
 -- DDL: schemas, tables, keys, constraints
 CREATE SCHEMA IF NOT EXISTS sales;
 
+SELECT * FROM sales.customers
+  LIMIT 10;
+
 -- Parent table
 CREATE TABLE IF NOT EXISTS sales.customers (
                                                customer_id      BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
